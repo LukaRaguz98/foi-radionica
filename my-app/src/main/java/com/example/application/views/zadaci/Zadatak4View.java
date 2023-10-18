@@ -54,15 +54,15 @@ public class Zadatak4View extends VerticalLayout {
                 // 1. Umjesto istinite vrijednosti izmjenite varijablu vecUneseno tako da prolazi po listi kolegija i za svaku vrijednost provjerava da li u listi već postoji taj naziv kolegija
                 boolean vecUneseno = true;
                 // 2. Ako vrijednost nije unesena izvršite sljedeća akcije, inače ispišite notifikaciju da je kolegij već unesen
-
+                int ocjenaBroj = Integer.parseInt(ocjena);
+                kolegiji.add(new Kolegij(kolegij, ocjenaBroj));
+                kolegijiGrid.setItems(kolegiji);
+                updateProsjek();
+                imeKolegijaComboBox.clear();
+                ocjenaComboBox.clear();
             } else {
                 Notification.show("Molimo unesite ispravne podatke.");
-            }int ocjenaBroj = Integer.parseInt(ocjena);
-            kolegiji.add(new Kolegij(kolegij, ocjenaBroj));
-            kolegijiGrid.setItems(kolegiji);
-            updateProsjek();
-            imeKolegijaComboBox.clear();
-            ocjenaComboBox.clear();
+            }
         });
 
         kolegijiGrid = new Grid<>(Kolegij.class);
