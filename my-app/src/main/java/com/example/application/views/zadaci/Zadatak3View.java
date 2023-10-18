@@ -39,14 +39,14 @@ public class Zadatak3View extends VerticalLayout {
         naslovH1 = new H1("Kolegiji i ocjene - Dodavanje ComboBox-a i izmjena layout-a");
 
         // 1. Inicijalizirajte ComboBox za naziv kolegija sa odgovarajućom labelom te mu postavite širinu na 300px
-        imeKolegijaComboBox = new ComboBox<>("Izaberite kolegij:");
-        imeKolegijaComboBox.setWidth("300px");
+
+        
         // 2. Kao dataset unutar ComboBox-a koristite zahardkodirane vrijednosti iz sljedeće linije u svrhu demonstracije
         //imeKolegijaComboBox.setItems("Informatika", "Organizacija", "Matematika 1", "Programiranje 1", "Modeliranje poslovnih procesa", "Web dizajn i programiranje", "Algoritmi");
 
         // 3. Inicijalizirajte ComboBox za ocjene sa odgovarajućom labelom te mu postavite širinu na 200px
-        ocjenaComboBox = new ComboBox<>("Izaberite ocjenu:");
-        ocjenaComboBox.setWidth("200px");
+
+        
         // 4. Postavite dataset unutar ocjene ComboBox-a. Kao dataset unutar ComboBox-a koristite zahardkodirane vrijednosti 1-5.
 
         potvrdiButton = new Button("Potvrdi");
